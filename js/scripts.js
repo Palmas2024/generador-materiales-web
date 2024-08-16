@@ -162,4 +162,21 @@ function validateLubricantesForm() {
     }
 
     return true;
+}function validateAceitesForm() {
+    const viscosidad = document.getElementById('viscosidad').value;
+    const marca = document.getElementById('marca').value;
+    const presentacion = document.getElementById('presentacion').value;
+
+    if (!viscosidad || !marca || !presentacion) {
+        alert('Por favor, completa todos los campos.');
+        return false;
+    }
+
+    const descripcion = `Aceite de ${marca}, Viscosidad: ${viscosidad}, Presentación: ${presentacion}`;
+    alert(`Descripción Generada: ${descripcion}`);
+    
+    return false; // Evitar el envío del formulario
 }
+
+// Repite para otros formularios
+
