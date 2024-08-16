@@ -4,9 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Generador de Materiales</title>
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
     <h1>Bienvenido al Generador de Materiales</h1>
     <p>Aquí podrás generar descripciones de materiales de forma segura.</p>
+
+    <div>
+        <button onclick="openForm('aceites')">Aceites</button>
+        <button onclick="openForm('confecciones')">Confecciones</button>
+        <!-- Añadir más botones según los grupos de artículos -->
+    </div>
+
+    <div id="formContainer">
+        <!-- Aquí se cargarán los formularios dinámicamente -->
+    </div>
+
+    <script src="../js/scripts.js"></script>
 </body>
 </html>
+
